@@ -3,7 +3,6 @@
 use App\Http\Controllers\Api\OrderApiController;
 use App\Http\Controllers\Api\ProductApiController;
 use App\Http\Controllers\Api\PaymentApiController;
-use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function(){
