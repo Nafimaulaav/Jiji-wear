@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('shipping_cost', 10, 2)->default(0);
             $table->decimal('total', 10, 2);
             $table->enum('status', ['pending', 'processing', 'shipped', 'delivered', 'cancelled'])->default('pending');
-            $table->string('shipping_address');
+            $table->string('shipping_name');
             $table->string('shipping_phone');
             $table->text('shipping_address');
             $table->string('shipping_city');
