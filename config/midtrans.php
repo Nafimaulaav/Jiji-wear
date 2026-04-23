@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'server_key' => env('SB-Mid-server-MSa6-swydoP1HRryWZFun0n6'),
-    'client_key' => env('SB-Mid-client-9sXo2n7u8l3m1h5'),
+    'server_key' => env('MIDTRANS_SERVER_KEY'),
+    'client_key' => env('MIDTRANS_CLIENT_KEY'),
     'is_production' => env('MIDTRANS_IS_PRODUCTION', false),
     'is_sanitized' => env('MIDTRANS_IS_SANITIZED', true),
     'is_3ds' => env('MIDTRANS_IS_3DS', true),
