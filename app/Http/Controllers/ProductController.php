@@ -28,13 +28,13 @@ class ProductController extends Controller
         }
 
         $products = $query->paginate(9);
-        $category = Category::all();
+        $categories = Category::all();
 
-        return view('product.index', compact('products', 'categories'));
+        return view('products.index', compact('products', 'categories'));
     }
 
     public function show(Product $product){
         $related = Product::where('category_id', $product->category_id)->where('id', '!=', $product->id)->where('is_active', true)-> take(4)->get();
-        return view('product.show', compact('product', 'related'));
+        return view('products.show', compact('product', 'related'));
     }
 }

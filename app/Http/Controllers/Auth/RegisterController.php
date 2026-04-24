@@ -20,6 +20,7 @@ class RegisterController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
             'phone' => 'nullable|string|max:20',
+            'agree' => 'accepted',
         ]);
 
         $user = User::create([

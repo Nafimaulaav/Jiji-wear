@@ -54,6 +54,7 @@ class DatabaseSeeder extends Seeder
             'stock' => 50,
             'sizes' => ['S', 'M', 'L', 'XL'],
             'colors' => ['Hitam', 'Putih', 'Abu-abu'],
+            'image' => 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400',
             'is_active' => true,
         ],
         [
@@ -65,6 +66,7 @@ class DatabaseSeeder extends Seeder
             'stock' => 100,
             'sizes' => ['S', 'M', 'L', 'XL'],
             'colors' => ['Merah', 'Putih', 'Navy', 'Hitam'],
+            'image' => 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400',
             'is_active' => true,
         ],
         [
@@ -76,28 +78,7 @@ class DatabaseSeeder extends Seeder
             'stock' => 30,
             'sizes' => ['S', 'M', 'L', 'XL'],
             'colors' => ['Hitam', 'Putih', 'Abu-abu'],
-            'is_active' => true,
-        ],
-        [
-            'category_id' => 2,
-            'name' => 'Kemeja Flanel',
-            'slug' => 'kemeja-flanel',
-            'description' => 'Kemeja flannel dengan motif kotak-kotak klasik. Cocok untuk casual maupun semi-formal.',
-            'price' => 219000,
-            'stock' => 40,
-            'sizes' => ['S', 'M', 'L', 'XL'],
-            'colors' => ['Merah-Hitam', 'Biru-Hitam', 'Coklat-Hitam'],
-            'is_active' => true,
-        ],
-        [
-            'category_id' => 3,
-            'name' => 'Jaket Denim',
-            'slug' => 'jaket-denim',
-            'description' => 'Jaket denim dengan desain washed yang memberikan kesan vintage.',
-            'price' => 449000,
-            'stock' => 15,
-            'sizes' => ['M', 'L', 'XL'],
-            'colors' => ['Light Blue', 'Dark Blue', 'Black Washed'],
+            'image' => 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400',
             'is_active' => true,
         ],
         [
@@ -109,6 +90,7 @@ class DatabaseSeeder extends Seeder
             'stock' => 20,
             'sizes' => ['M', 'L', 'XL', 'XXL'],
             'colors' => ['Hitam', 'Navy', 'Maroon'],
+            'image' => 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400',
             'is_active' => true,
         ],
         [
@@ -120,6 +102,7 @@ class DatabaseSeeder extends Seeder
             'stock' => 25,
             'sizes' => ['S', 'M', 'L', 'XL'],
             'colors' => ['Hitam', 'Navy', 'Abu-Abu', 'Kuning'],
+            'image' => 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400',
             'is_active' => true,
         ],
         [
@@ -131,6 +114,7 @@ class DatabaseSeeder extends Seeder
             'stock' => 35,
             'sizes' => ['28', '29', '30', '31', '32'],
             'colors' => ['Hitam', 'Navy', 'Abu-Abu', 'Kuning'],
+            'image' => 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400',
             'is_active' => true,
         ],     
         ];
