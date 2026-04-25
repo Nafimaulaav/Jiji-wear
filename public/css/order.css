@@ -1,0 +1,421 @@
+.orders-section {
+    padding: 3rem 0;
+    min-height: 70vh;
+}
+
+.orders-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.orders-page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.btn-shop-again {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0.7rem 1.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background var(--transition);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-shop-again:hover {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.order-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.2rem;
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.order-card-header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.85rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.order-card-number {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.order-card-date {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.order-card-header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.order-card-body {
+    padding: 1.2rem 1.5rem;
+}
+
+.order-items-preview {
+    font-size: 0.9rem;
+    color: var(--primary);
+    line-height: 1.8;
+}
+
+.order-items-preview .more-items {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.order-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.order-total-label {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 0.1rem;
+}
+
+.order-total-amount {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.btn-order-detail {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-order-detail:hover {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.btn-order-pay {
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-order-pay:hover {
+    background: #d43a54;
+    color: var(--white);
+}
+
+.empty-orders {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.empty-orders .icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.empty-orders h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.empty-orders p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.btn-orders-shop {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0.85rem 2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background var(--transition), transform var(--transition);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-orders-shop:hover {
+    background: var(--accent);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+.order-detail-section {
+    padding: 3rem 0;
+    background: var(--light-bg);
+}
+
+.order-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-back-orders {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color var(--transition);
+}
+
+.btn-back-orders:hover {
+    color: var(--accent);
+}
+
+.order-detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    color: var(--primary);
+    margin: 0;
+}
+
+.detail-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+}
+
+.detail-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--light-bg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detail-order-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.detail-order-number-label {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.detail-order-number-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.detail-order-date {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+}
+
+.detail-item-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.detail-item-row:last-child {
+    border-bottom: none;
+}
+
+.detail-item-img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.detail-item-info {
+    flex: 1;
+}
+
+.detail-item-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--primary);
+}
+
+.detail-item-attrs {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+}
+
+.detail-item-unit-price {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.1rem;
+}
+
+.detail-item-subtotal {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.detail-shipping-address {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--primary);
+}
+
+.detail-shipping-notes {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--light-bg);
+    border-radius: var(--radius-sm);
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.detail-summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--light-bg);
+    font-size: 0.9rem;
+}
+
+.detail-summary-row:last-of-type {
+    border-bottom: none;
+}
+
+.detail-summary-row .label {
+    color: var(--text-muted);
+}
+
+.detail-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    border-top: 2px solid var(--light-bg);
+    margin-top: 0.3rem;
+}
+
+.detail-total-row .amount {
+    color: var(--accent);
+}
+
+.payment-info-list {
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+.payment-info-list .label {
+    color: var(--text-muted);
+}
+
+.payment-status-success { color: var(--success); font-weight: 700; }
+.payment-status-failed  { color: var(--accent);  font-weight: 700; }
+.payment-status-pending { color: #b45309;         font-weight: 700; }
+
+.btn-complete-payment {
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0.85rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background var(--transition);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-complete-payment:hover {
+    background: #d43a54;
+    color: var(--white);
+}

@@ -35,7 +35,14 @@ class Product extends Model
         return $this->hasMany(OrderItem::class);
     }
 
-    public function getImageUrlAttribute(){
-        return $this->image ? asset('storage/' . $this->image) : asset ('images/placehorder.png');
+    public function getImageUrlAttribute()
+{
+    if (!$this->image) {
+        return 'https://via.placeholder.com/400x280/1a1a2e/c9a84c?text=' . urlencode($this->name);
     }
+    if (str_starts_with($this->image, 'http')) {
+        return $this->image;
+    }
+    return asset('storage/' . $this->image);
+}
 }

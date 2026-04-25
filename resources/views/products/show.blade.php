@@ -40,9 +40,9 @@
                     @if ($product->stock > 10)
                         <span class="badge stock-indicator bg-success"> ✅ Tersedia &nbsp; &nbsp; Stok: {{ $product->stock }} </span>
                     @elseif($product->stock > 0)
-                        <span class="bagde stock-indicator bg-warning text-dark"> ⚠️ Stok Terbatas: {{ $product->stock }}</span>
+                        <span class="badge stock-indicator bg-warning text-dark"> ⚠️ Stok Terbatas: {{ $product->stock }}</span>
                     @else
-                        <span class="bagde stock-indicator bg-secondary">❌ Stok Habis</span>
+                        <span class="badge stock-indicator bg-secondary">❌ Stok Habis</span>
                     @endif
                 </div>
             </div>
@@ -70,11 +70,11 @@
                     @endif
                     @if ($product->colors)
                     <div class="mt-3">
-                        <div selector-label>
+                        <div class="selector-label">
                             Warna
                             <span class="selector-selected-value" id="selectedColorLabel"></span>
                         </div>
-                        <div class="color-selection-group">
+                        <div class="color-selector-group">
                             @foreach ($product->colors as $color)
                                 <button type="button" class="color-btn" onclick="selectColor('{{ $color }}', this)">{{ $color }}</button>
                             @endforeach
@@ -95,7 +95,7 @@
                             <i class="bi bi-bag-plus"></i>Tambah ke Keranjang
                         </button>
                         <a href="{{ route('cart.index') }}" class="btn-bag-icon">
-                            <i class="bi bi-bag f-5"></i>
+                            <i class="bi bi-bag fs-5"></i>
                         </a>
                     </div>
                 </form>
@@ -124,7 +124,7 @@
 </div>
 
 @if ($related->count() > 0)
-<div class="related-saction">
+<div class="related-section">
     <div class="container">
         <h2 class="related-title">Produk Serupa</h2>
         <div class="row g-4">
@@ -133,6 +133,7 @@
                 <div class="related-card card">
                     <img src="{{ $rel->image }}" class="card-img-top" alt="{{ $rel->name }}" onerror="this.src='https://via.placeholder.com/300x200/1a1a2e/c9a84c?text={{ urlencode($rel->name) }}'">
                     <div class="card-body">
+                        <div class="card-price">{{ $rel->name }}</div>
                         <div class="card-price">Rp {{ number_format($rel->price, 0,',','.') }}</div>
                         <a href="{{ route('products.show', $rel->slug) }}" class="btn-related-view mt-2">Lihat Produk</a>
                     </div>
@@ -150,7 +151,7 @@
 <script>
     function selectSize(size, el){
         document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
-        el.classlist.add('selected');
+        el.classList.add('selected');
         document.getElementById('sizeInput').value = size;
         document.getElementById('selectedSizeLabel').textContent = '- ' + size;
     }
@@ -171,10 +172,12 @@
 
     document.getElementById('addToCartForm')?.addEventListener('submit', function(e){
         const size = document.getElementById('sizeInput').value;
+        const color = document.getElementById('colorInput').value;
         if (!size) {e.preventDefault(); alert('Pilih ukuran terlebih dahulu!'); return;}
-        if (!color) {e.defaultPrevented(); alert('Pilih warna terlebih dahulu!'); return;}
+        if (!color) {e.preventDefault(); alert('Pilih warna terlebih dahulu!'); return;}
     });
 </script>
+@endpush
 
 
 

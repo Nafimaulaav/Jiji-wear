@@ -1,0 +1,506 @@
+.checkout-section {
+    padding: 3rem 0;
+    background: var(--light-bg);
+    min-height: 80vh;
+}
+
+.checkout-page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.checkout-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+}
+
+.checkout-section-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--primary);
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--light-bg);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkout-user-info {
+    background: var(--light-bg);
+    border-radius: var(--radius-md);
+    padding: 0.85rem 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkout-user-info strong {
+    color: var(--primary);
+}
+
+.payment-method-strip {
+    background: var(--light-bg);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment-method-strip .icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.payment-method-strip .name {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.payment-method-strip .desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.1rem;
+}
+
+.checkout-summary-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 1rem;
+}
+
+.checkout-order-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.checkout-order-item:last-of-type {
+    border-bottom: none;
+}
+
+.checkout-order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.checkout-order-item .item-info {
+    flex: 1;
+}
+
+.checkout-order-item .item-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+.checkout-order-item .item-meta {
+    font-size: 0.78rem ;
+    color: var(--text-muted);
+}
+
+.checkout-order-item .item-subtotal {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.checkout-summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.checkout-summary-row .label {
+    color: var(--text-muted);
+}
+
+.checkout-summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+    border-top: 2px solid var(--light-bg);
+    margin-top: 0.5rem;
+}
+
+.checkout-summary-total .amount {
+    color: var(--accent);
+}
+
+.btn-place-order {
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 14px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'DM sans', sans-serif;
+}
+
+.btn-place-order:hover {
+    background: #d43a54;
+    transform: translateY(-1px);
+}
+
+.checkout-security-note {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.payment-section {
+    padding: 4rem 0;
+    background: var(--light-bg);
+    min-height: 80vh;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.step-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.step-label.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.step-num {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-num.done {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.step-num.active-step {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.step-num.waiting {
+    background: var(--border);
+    color: var(--text-muted);
+}
+
+.step-line {
+    width: 50px;
+    height: 2px;
+    background: var(--border);
+    margin: 0 0.3rem;
+    flex-shrink: 0;
+}
+
+.step-line.done {
+    background: var(--success);
+}
+
+.payment-card {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: var(--shadow-md);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.payment-card-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem; 
+}
+
+.payment-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.payment-order-number {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-top: 0.5rem;
+}
+ 
+.payment-order-number strong {
+    color: var(--primary);
+}
+ 
+.payment-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 1rem 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.payment-items-summary {
+    background: var(--light-bg);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+ 
+.payment-items-summary .item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+}
+ 
+.payment-items-summary .item-row:last-child {
+    border-bottom: none;
+}
+ 
+.payment-items-summary .item-row span:first-child {
+    color: var(--text-dark);
+}
+ 
+.payment-items-summary .item-row strong {
+    color: var(--primary);
+    white-space: nowrap;
+}
+ 
+.payment-items-summary .shipping-row {
+    color: var(--text-muted);
+}
+
+.btn-pay-now {
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 16px;
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: 'DM Sans', sans-serif;
+}
+ 
+.btn-pay-now:hover {
+    background: #d43a54;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+}
+
+.payment-info-note {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+ 
+.payment-security-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--light-bg);
+}
+
+.success-section {
+    padding: 5rem 0;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f5f0 0%, #e8f5e9 100%);
+}
+ 
+.success-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 4rem 3rem;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    max-width: 550px;
+    margin: 0 auto;
+}
+ 
+.success-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #198754, #20c997);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    animation: successPop 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+}
+ 
+@keyframes successPop {
+    0%   { transform: scale(0); opacity: 0; }
+    60%  { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+ 
+.success-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    font-size: 2rem;
+}
+ 
+.success-card p {
+    color: var(--text-muted);
+    margin: 1rem 0 2rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.success-email-box {
+    background: var(--light-bg);
+    border-radius: var(--radius-md);
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+ 
+.success-email-box .icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+ 
+.success-email-box .info {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+ 
+.success-email-box .info strong {
+    color: var(--primary);
+    display: block;
+    margin-top: 0.2rem;
+}
+ 
+.success-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.btn-success-orders {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 14px;
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background var(--transition), transform var(--transition);
+    font-family: 'DM Sans', sans-serif;
+}
+ 
+.btn-success-orders:hover {
+    background: var(--accent);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+ 
+.btn-success-shop {
+    background: var(--light-bg);
+    color: var(--primary);
+    border: none;
+    border-radius: 14px;
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all var(--transition);
+    font-family: 'DM Sans', sans-serif;
+}
+ 
+.btn-success-shop:hover {
+    background: var(--border);
+    color: var(--primary);
+}

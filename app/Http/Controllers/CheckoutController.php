@@ -102,7 +102,7 @@ class CheckoutController extends Controller
             'gross_amount' => (int) $total,
         ];
 
-        $custumerDetails = [
+        $customerDetails = [
             'first_name' => Auth::user()->name,
             'email' => Auth::user()->email,
             'phone' => $request->shipping_phone,
@@ -126,7 +126,7 @@ class CheckoutController extends Controller
         $params = [
             'transaction_details' => $transactionDetails,
             'item_details' => $itemDetails,
-            'custumer_details' => $custumerDetails,
+            'customer_details' => $customerDetails,
         ];
 
         $snapToken = Snap::getSnapToken($params);

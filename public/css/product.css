@@ -1,12 +1,3 @@
-/* ============================================================
-   products.css — Product List & Detail Pages · TokoJaket
-   ============================================================ */
-
-/* ============================================================
-   PRODUCTS INDEX
-   ============================================================ */
-
-/* ── Hero Banner ── */
 .hero-banner {
     background: linear-gradient(135deg, var(--primary) 0%, #16213e 60%, #0f3460 100%);
     color: var(--white);
@@ -42,7 +33,6 @@
     margin-top: 0.5rem;
 }
 
-/* ── Filter Bar ── */
 .filter-bar {
     background: var(--white);
     border-radius: var(--radius-lg);
@@ -64,7 +54,6 @@
     display: block;
 }
 
-/* Category pills */
 .category-pill {
     display: inline-block;
     padding: 0.4rem 1.2rem;
@@ -90,7 +79,6 @@
     color: var(--white);
 }
 
-/* Sort select */
 .sort-select {
     border: 2px solid var(--border);
     border-radius: var(--radius-sm);
@@ -109,14 +97,12 @@
     box-shadow: none;
 }
 
-/* Results info text */
 .results-info {
     color: var(--text-muted);
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
-/* ── Product Card ── */
 .product-card {
     border: none;
     border-radius: var(--radius-lg);
@@ -133,7 +119,6 @@
     box-shadow: var(--shadow-lg);
 }
 
-/* Image wrapper */
 .product-img-wrap {
     position: relative;
     overflow: hidden;
@@ -152,7 +137,6 @@
     transform: scale(1.06);
 }
 
-/* Stock badge on image */
 .product-stock-badge {
     position: absolute;
     top: 12px;
@@ -173,7 +157,6 @@
     color: var(--white);
 }
 
-/* Hover overlay on image */
 .product-overlay {
     position: absolute;
     bottom: 0;
@@ -189,7 +172,6 @@
     transform: translateY(0);
 }
 
-/* Card body text */
 .product-body {
     padding: 1.2rem;
 }
@@ -221,7 +203,6 @@
     color: var(--text-muted);
 }
 
-/* Size mini chips */
 .size-chip {
     font-size: 0.72rem;
     background: var(--light-bg);
@@ -231,7 +212,6 @@
     font-weight: 600;
 }
 
-/* View product btn inside card */
 .btn-view-product {
     background: var(--primary);
     color: var(--white);
@@ -253,7 +233,6 @@
     color: var(--white);
 }
 
-/* ── Empty state ── */
 .no-products {
     text-align: center;
     padding: 5rem 0;
@@ -272,11 +251,6 @@
     margin-bottom: 0.5rem;
 }
 
-/* ============================================================
-   PRODUCT DETAIL (show page)
-   ============================================================ */
-
-/* Breadcrumb section */
 .breadcrumb-section {
     background: var(--light-bg);
     padding: 1rem 0;
@@ -296,7 +270,6 @@
     padding: 3rem 0;
 }
 
-/* Main product image */
 .product-image-main {
     width: 100%;
     height: 500px;
@@ -305,14 +278,12 @@
     box-shadow: var(--shadow-md);
 }
 
-/* Stock indicator pill below image */
 .stock-indicator {
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
 }
 
-/* Product heading & price */
 .product-detail-category {
     font-size: 0.85rem;
     color: var(--text-muted);
@@ -341,7 +312,6 @@
     margin-top: 1rem;
 }
 
-/* ── Size Selector ── */
 .size-selector-group {
     display: flex;
     flex-wrap: wrap;
@@ -373,7 +343,6 @@
     color: var(--white);
 }
 
-/* ── Color Selector ── */
 .color-selector-group {
     display: flex;
     flex-wrap: wrap;
@@ -404,7 +373,6 @@
     font-weight: 600;
 }
 
-/* Selected label */
 .selector-label {
     font-weight: 600;
     margin-bottom: 0.3rem;
@@ -416,7 +384,6 @@
     font-weight: 700;
 }
 
-/* ── Quantity Control ── */
 .qty-control {
     display: flex;
     align-items: center;
@@ -462,7 +429,6 @@
     font-size: 0.82rem;
 }
 
-/* ── Add to Cart Button ── */
 .btn-add-cart {
     background: var(--primary);
     color: var(--white);
@@ -487,7 +453,6 @@
     box-shadow: 0 8px 24px rgba(233, 69, 96, 0.25);
 }
 
-/* Bag icon button next to add-cart */
 .btn-bag-icon {
     border: 2px solid var(--border);
     border-radius: 14px;
@@ -507,7 +472,6 @@
     color: var(--primary);
 }
 
-/* ── Product Info Box ── */
 .product-info-box {
     background: var(--light-bg);
     border-radius: 14px;
@@ -530,7 +494,6 @@
     flex-shrink: 0;
 }
 
-/* ── Related Products Section ── */
 .related-section {
     background: var(--light-bg);
     padding: 4rem 0;
